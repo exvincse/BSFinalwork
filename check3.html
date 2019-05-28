@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>甜點電商</title>
+    <meta property="og:title" content="結帳" />
+    <meta property="og:description" content="作業" />
+    <meta property="og:site_name" content="甜點電商" />
+    <meta property="og:locale" content="zh_TW" />
+    <link rel="shortcut icon" href="images/logo-dark.ico">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheets/all.css">
+</head>
+
+<body>
+    <div class="container no-container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white p-4 px-lg-0">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a href="index.html" class="navbar-brand logo bg-cover mr-0"></a>
+            <a class="px-3 nav-link text-tea btn btn-outline-tea d-lg-none d-block custom" href="cart.html">
+                <i class="fas fa-shopping-cart"></i>
+            </a>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item px-3">
+                        <a class="px-3 nav-link font-weight-bold text-tea btn btn-outline-tea custom"
+                            href="index.html">首頁</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a class="px-3 nav-link font-weight-bold text-tea btn btn-outline-tea custom"
+                            href="product.html">甜點</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a class="px-3 nav-link font-weight-bold text-tea btn btn-outline-tea custom"
+                            href="login.html">登入</a>
+                    </li>
+                    <li class="nav-item px-3 d-none d-lg-block">
+                        <a class="px-3 nav-link text-tea btn btn-outline-tea custom" href="cart.html">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <form class="needs-validation text-light-tea" novalidate>
+                            <div class="bg-tea p-5">
+                                <div class="row align-items-center">
+                                    <div class="col-6">
+                                        <h2 class="mb-0">發票</h2>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="l-progess d-flex justify-content-between">
+                                            <div class="l-progess-item l-complete border border-white">
+                                                <i class="far fas fa-check l-progess-icon"></i>
+                                            </div>
+                                            <div class="l-progess-item l-complete border border-white">
+                                                <i class="far fas fa-check l-progess-icon"></i>
+                                            </div>
+                                            <div class="l-progess-item check-active border border-white"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="form-row mt-4">
+                                    <div class="col-12 mb-3">
+                                        <div class="list-group list-group-horizontal" id="c-list">
+                                            <a href="#el"
+                                                class="btn btn-outline-light-tea btn-block btn-lg invoice in-active active"
+                                                data-toggle="list">電子發票</a>
+                                            <a href="#mail"
+                                                class="btn btn-outline-light-tea btn-block btn-lg invoice mt-0"
+                                                data-toggle="list">郵寄發票</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 tab-content">
+                                        <div id="el" class="tab-pane active">
+                                            <div class="mb-3">
+                                                <label for="email">電子郵件信箱</label>
+                                                <input type="email" class="form-control form-control-lg" id="email"
+                                                    placeholder="example@email.com" required>
+                                                <div class="invalid-feedback">
+                                                    請輸入信箱
+                                                </div>
+                                            </div>
+
+                                            <div class="mb-3">
+                                                <label for="tax-id">統一編號（選填）</label>
+                                                <input type="text" class="form-control form-control-lg" id="tax-id"
+                                                    placeholder="12345678" required>
+                                            </div>
+                                        </div>
+
+                                        <div id="mail" class="tab-pane">
+                                            <div class="form-row align-items-end">
+                                                <div class="col-12">
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <label for="#" class="form-text">地址</label>
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input type="checkbox" class="custom-control-input"
+                                                                id="customCheck1">
+                                                            <label class="custom-control-label text-white"
+                                                                for="customCheck1">同運送地址</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-6 mb-3">
+                                                    <select class="custom-select custom-select-lg">
+                                                        <option selected>高雄市</option>
+                                                        <option value="1">基隆市</option>
+                                                        <option value="2">台北市</option>
+                                                        <option value="3">新北市</option>
+                                                    </select>
+                                                    <div class="invalid-feedback">
+                                                        請輸入地址
+                                                    </div>
+                                                </div>
+                                                <div class="col-6 mb-3">
+                                                    <select class="custom-select custom-select-lg">
+                                                        <option selected>新興區</option>
+                                                        <option value="1">XXX</option>
+                                                        <option value="2">XXX</option>
+                                                        <option value="3">XXX</option>
+                                                    </select>
+                                                    <div class="invalid-feedback">
+                                                        請輸入地址
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 mb-3">
+                                                    <input type="text" class="form-control form-control-lg"
+                                                        placeholder="幸福路 520 號" required>
+                                                    <div class="invalid-feedback">
+                                                        請輸入地址
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-12 mb-3">
+                                                    <label for="tax-id">統一編號（選填）</label>
+                                                    <input type="text" class="form-control form-control-lg" id="tax-id"
+                                                        placeholder="12345678" required>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="success.html" class="btn btn-light-yellow btn-lg btn-block text-tea p-3">確認結帳</a>
+                        </form>
+                    </div>
+                    <div class="col-lg-6 d-lg-block d-none">
+                        <div class="border border-light-tea">
+                            <h4 class="bg-light-tea text-lime-green text-center py-3 mb-0">訂單摘要</h4>
+                            <div class="py-4 px-4 text-lime-green">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span>小計</span>
+                                    <span>NT$ 2,700</span>
+                                </div>
+                                <div class="d-flex justify-content-between mb-3">
+                                    <span>運費</span>
+                                    <span>NT$ 300</span>
+                                </div>
+                                <div class="d-flex justify-content-between h4 mb-0">
+                                    <span>總計</span>
+                                    <span>NT$ 3,000</span>
+                                </div>
+                            </div>
+
+                            <div>
+                                <h4 class="bg-light-tea text-lime-green text-center py-3 mb-0">購物清單</h4>
+                                <div class="px-4 py-3 d-flex justify-content-between align-items-center">
+                                    <div class="check-img bg-cover"
+                                        style="background-image:url(https://bit.ly/2QvsT63)">
+                                    </div>
+                                    <div class="d-flex flex-column text-lime-green">
+                                        <span class="h4">焦糖馬卡龍 (2)</span>
+                                        <span class="h3">NT$ 900</span>
+                                    </div>
+                                </div>
+
+                                <div class="px-4 py-3 d-flex justify-content-between align-items-center">
+                                    <div class="check-img bg-cover"
+                                        style="background-image:url(https://bit.ly/2QvsT63)">
+                                    </div>
+                                    <div class="d-flex flex-column text-lime-green">
+                                        <span class="h4">焦糖馬卡龍 (2)</span>
+                                        <span class="h3">NT$ 900</span>
+                                    </div>
+                                </div>
+
+                                <div class="px-4 py-3 d-flex justify-content-between align-items-center">
+                                    <div class="check-img bg-cover"
+                                        style="background-image:url(https://bit.ly/2QvsT63)">
+                                    </div>
+                                    <div class="d-flex flex-column text-lime-green">
+                                        <span class="h4">焦糖馬卡龍 (2)</span>
+                                        <span class="h3">NT$ 900</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <footer class="mt-lg-5">
+            <div class="bg-tea py-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 py-2">
+                            <img src="images/logo-light.svg"
+                                style="max-width: 40px;max-height:40px; vertical-align: top;">
+                            <span class="h2 mb-0 text-white">訂閱你我的甜蜜郵件</span>
+                        </div>
+                        <div class="col-lg-6 mt-lg-0 mt-2">
+                            <div class="input-group flex-nowrap">
+                                <div class="input-group-prepend">
+                                    <label for="email" class="input-group-text px-4 py-3 bg-light-tea"
+                                        id="addon-wrapping">
+                                        <i class="fas fa-envelope"></i>
+                                    </label>
+                                </div>
+                                <input type="text" id="email" class="form-control bg-light-tea" style="height: 58px;"
+                                    aria-label="Username" aria-describedby="addon-wrapping">
+                                <div class="input-group-append">
+                                    <a href="#" class="btn btn-light-yellow text-tea px-4 py-3">
+                                        <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-light-tea py-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-9 d-flex flex-column justify-content-between">
+                            <img src="images/logotype-lg-dark.svg" alt="" style="width: 171px;height: 26px;">
+                            <div class="text-tea mt-3 mt-lg-0">
+                                07-1234-5678<br>
+                                sweetaste@email.com 800<br>
+                                高雄市新興區幸福路 520 號
+                                <div class="fans mt-3">
+                                    <a href="#" class="mr-2" style="text-decoration: none;">
+                                        <img src="images/ic-line@.svg" alt="" style="max-width: 40px;max-height: 40px">
+                                    </a>
+                                    <a href="#" style="text-decoration: none;">
+                                        <img src="images/ic-facebook.svg" alt=""
+                                            style="max-width: 40px;max-height: 40px">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-9 text-lg-right mt-lg-0 mt-3">
+                            <img src="images/sm-今天是個吃甜點的好日子.svg" class="d-lg-block d-none ml-auto"
+                                style="width: 59px;height: 218px;" alt="">
+                            <span>© 2018 Sweetaste* All Rights Reserved</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+        <script>
+            $(document).ready(function () {
+                $(".invoice").click(function () {
+                    $(this).addClass('in-active').siblings().removeClass('in-active');
+                });
+            });
+            // Example starter JavaScript for disabling form submissions if there are invalid fields
+            (function () {
+                'use strict';
+                window.addEventListener('load', function () {
+                    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                    var forms = document.getElementsByClassName('needs-validation');
+                    // Loop over them and prevent submission
+                    var validation = Array.prototype.filter.call(forms, function (form) {
+                        form.addEventListener('submit', function (event) {
+                            if (form.checkValidity() === false) {
+                                event.preventDefault();
+                                event.stopPropagation();
+                            }
+                            form.classList.add('was-validated');
+                        }, false);
+                    });
+                }, false);
+            })();
+        </script>
+</body>
+
+</html>
