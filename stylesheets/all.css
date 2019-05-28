@@ -8170,6 +8170,22 @@ input {
       padding-right: 15px;
       padding-left: 15px; } }
 
+.p-gutters {
+  margin-right: 0;
+  margin-left: 0; }
+  .p-gutters > .col,
+  .p-gutters > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0; }
+  @media (min-width: 992px) {
+    .p-gutters {
+      margin-right: -15px;
+      margin-left: -15px; }
+      .p-gutters > .col,
+      .p-gutters > [class*="col-"] {
+        padding-right: 15px;
+        padding-left: 15px; } }
+
 .nav-item .custom, a.custom {
   border: 0; }
   .nav-item .custom:hover, a.custom:hover {
@@ -8182,7 +8198,7 @@ input {
   bottom: 0;
   left: 0;
   right: 0;
-  filter: blur(3px);
+  filter: blur(4px);
   z-index: -20; }
 
 .pos {
@@ -8191,7 +8207,9 @@ input {
   top: -89px;
   z-index: 20;
   color: white;
-  transition: 0.7s; }
+  transition: 0.7s;
+  text-decoration: none !important;
+  overflow: hidden; }
   @media (max-width: 767px) {
     .pos {
       top: 0; } }
@@ -8248,22 +8266,6 @@ input {
 .nav-active {
   color: #fff !important;
   background-color: #3F5D45 !important; }
-
-.p-gutters {
-  margin-right: 0;
-  margin-left: 0; }
-  .p-gutters > .col,
-  .p-gutters > [class*="col-"] {
-    padding-right: 0;
-    padding-left: 0; }
-  @media (min-width: 992px) {
-    .p-gutters {
-      margin-right: -15px;
-      margin-left: -15px; }
-      .p-gutters > .col,
-      .p-gutters > [class*="col-"] {
-        padding-right: 15px;
-        padding-left: 15px; } }
 
 .form-position {
   position: relative;
