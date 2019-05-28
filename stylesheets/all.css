@@ -8143,12 +8143,12 @@ a.text-lime-green:hover, a.text-lime-green:focus {
   visibility: hidden !important; }
 
 .logo {
-  background-image: url("../../images/logotype-sm-dark.svg");
+  background-image: url("../images/logotype-sm-dark.svg");
   width: 114px;
   height: 17px; }
   @media (min-width: 992px) {
     .logo {
-      background-image: url("../../images/logo-all-dark.svg");
+      background-image: url("../images/logo-all-dark.svg");
       width: 219px;
       height: 40px; } }
 
