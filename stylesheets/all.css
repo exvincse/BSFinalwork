@@ -7142,6 +7142,8 @@ input {
       background-color: #FFE180 !important; }
     .pos:hover .bg-position {
       filter: blur(0px); }
+    .pos:hover .l-font {
+      font-weight: 700; }
   .pos .bg-light-yellow, .pos .bg-tea {
     position: absolute;
     top: 0;
@@ -7149,7 +7151,7 @@ input {
     z-index: -20;
     transition: 0.7s; }
   .pos span {
-    letter-spacing: 10px;
+    letter-spacing: 8px;
     -webkit-writing-mode: vertical-lr;
         -ms-writing-mode: tb-lr;
             writing-mode: vertical-lr; }
