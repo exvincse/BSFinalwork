@@ -7625,6 +7625,13 @@ input {
   right: 0;
   left: auto; }
 
+.kind-size {
+  height: 250px;
+  margin: 0 -15px; }
+  @media (min-width: 992px) {
+    .kind-size {
+      height: 460px; } }
+
 .form-position {
   position: relative;
   width: 100%;
