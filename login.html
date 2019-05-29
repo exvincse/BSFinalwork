@@ -52,40 +52,45 @@
       <div class="col-lg-10">
         <div class="row no-gutters">
           <div class="col-lg-6 bg-tea">
-            <form class="h-100">
+           <form action="#" class="needs-validation h-100" novalidate>
               <div class="px-4 pt-5 pb-lg-0 pb-5">
                 <h1 class="text-center text-white">會員登入</h1>
               </div>
 
               <div class="d-lg-none d-block">
-
-                <div class="list-group flex-md-row bg-light-tea p-4 mb-4">
-                  <a href="#" class="list-group-item list-group-item-action text-center py-2">
-                    <img src="images/ic-facebook-logotype.svg" class="other-login" alt=""
-                      style="width: 75px;height: 20px;">
+                <div class="list-group flex-row bg-light-tea p-4 mb-4">
+                  <a href="#" class="list-group-item list-group-item-action text-center p-1 mb-0">
+                    <img src="images/ic-facebook-logotype.svg" alt="" class="w-80" style="width: 108px;height: 20px;">
                   </a>
-                  <a href="#" class="list-group-item list-group-item-action text-center py-2">
-                    <img src="images/ic-google.svg" class="other-login" alt="" style="width: 75px;height: 31px;">
+                  <a href="#" class="list-group-item list-group-item-action text-center p-1 mb-0">
+                    <img src="images/ic-google.svg" alt="" class="w-80" style="width: 94px;height: 31px;">
                   </a>
-                  <a href="#" class="list-group-item list-group-item-action text-center py-2">
-                    <img src="images/ic-yahoo.svg" class="other-login" alt="" style="width: 75px;height: 22px;">
+                  <a href="#" class="list-group-item list-group-item-action text-center p-1 mb-0">
+                    <img src="images/ic-yahoo.svg" alt="" class="w-80" style="width: 96px;height: 22px;">
                   </a>
                 </div>
               </div>
 
               <div class="px-4 py-5">
-                <div class="form-group">
+                <div class="form-group mb-4">
                   <div class="form-position pl-5">
                     <label for="account" class="input-icon text-tea"><i class="fas fa-user"></i></label>
-                    <input type="text" class="form-control-lg w-100 h-100" id="account" placeholder="電子信箱/手機號碼">
+                    <input type="text" class="form-control form-control-lg w-100 h-100" id="account" placeholder="電子信箱/手機號碼" required>
+                    <div class="invalid-feedback">
+                        請輸入電子信箱/手機號碼
+                    </div>
                   </div>
                 </div>
-                <div class="form-group">
+                <div class="form-group mb-4">
                   <div class="form-position pl-5">
                     <label for="password" class="input-icon text-tea"><i class="fas fa-key"></i></label>
-                    <input type="password" class="form-control-lg w-100 h-100" id="password" placeholder="請輸入使用者密碼">
+                    <input type="password" class="form-control form-control-lg w-100 h-100" id="password" placeholder="請輸入使用者密碼" required>
+                    <div class="invalid-feedback">
+                        請輸入密碼
+                    </div>
                   </div>
                 </div>
+
                 <div class="custom-control custom-checkbox">
                   <input type="checkbox" class="custom-control-input" id="customCheck1">
                   <label class="custom-control-label text-white" for="customCheck1">記住我</label>
@@ -113,7 +118,6 @@
         </div>
       </div>
     </div>
-
   </div>
 
   <footer class="mt-lg-5">
@@ -174,14 +178,34 @@
     </div>
   </footer>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-            crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-            crossorigin="anonymous"></script>
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+          'use strict';
+          window.addEventListener('load', function () {
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.getElementsByClassName('needs-validation');
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function (form) {
+              form.addEventListener('submit', function (event) {
+                if (form.checkValidity() === false) {
+                  event.preventDefault();
+                  event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+              }, false);
+            });
+          }, false);
+        })();
+      </script>
 </body>
 
 </html>
