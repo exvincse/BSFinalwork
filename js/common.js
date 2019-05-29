@@ -5,6 +5,10 @@ $(document).ready(function () {
         var name = thisval[1].textContent;
         var number = thisval[2].textContent;
         $(this).find('.modal-title').text("確認刪除" + name + number);
+    });
+    
+    $('.invoice').click(function(){
+        $(this).addClass('in-active').siblings().removeClass('in-active');
     })
 });
 
