@@ -7627,9 +7627,10 @@ input {
 
 .kind-size {
   height: 250px;
-  margin: 0 -15px; }
+  margin: 0px -15px; }
   @media (min-width: 992px) {
     .kind-size {
+      margin: -20px 0px;
       height: 460px; } }
 
 .form-position {
