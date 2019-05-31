@@ -24,7 +24,7 @@ $(document).ready(function () {
                     window.clearInterval(t);
                 }
             }
-        },1000);  
+        },500);  
     }
 });
 // Example starter JavaScript for disabling form submissions if there are invalid fields
