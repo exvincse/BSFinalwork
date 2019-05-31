@@ -10,8 +10,23 @@ $(document).ready(function () {
     $('.invoice').click(function(){
         $(this).addClass('in-active').siblings().removeClass('in-active');
     })
+    
+    window.onload=function(){
+        $('body').addClass('hidden');
+        var timer=0;
+        var t=setInterval(function(){
+            timer=timer+1;
+            console.log(timer);
+            if(document.readyState=="complete"){
+                if(timer>=1){
+                    $('.load').hide();
+                    $('body').removeClass('hidden');
+                    window.clearInterval(t);
+                }
+            }
+        },1000);  
+    }
 });
-
 // Example starter JavaScript for disabling form submissions if there are invalid fields
 (function () {
     'use strict';

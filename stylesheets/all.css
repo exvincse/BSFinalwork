@@ -4951,6 +4951,9 @@ button.bg-lime-green:focus {
 .w-80 {
   width: 80% !important; }
 
+.w-90 {
+  width: 90% !important; }
+
 .w-100 {
   width: 100% !important; }
 
@@ -4968,6 +4971,9 @@ button.bg-lime-green:focus {
 
 .h-80 {
   height: 80% !important; }
+
+.h-90 {
+  height: 90% !important; }
 
 .h-100 {
   height: 100% !important; }
@@ -7494,6 +7500,45 @@ a.text-lime-green:hover, a.text-lime-green:focus {
   .modal-xl {
     max-width: 1140px; } }
 
+@keyframes spinner-border {
+  to {
+    transform: rotate(360deg); } }
+
+.spinner-border {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  vertical-align: text-bottom;
+  border: 0.25em solid currentColor;
+  border-right-color: transparent;
+  border-radius: 50%;
+  animation: spinner-border .75s linear infinite; }
+
+.spinner-border-sm {
+  width: 1rem;
+  height: 1rem;
+  border-width: 0.2em; }
+
+@keyframes spinner-grow {
+  0% {
+    transform: scale(0); }
+  50% {
+    opacity: 1; } }
+
+.spinner-grow {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  vertical-align: text-bottom;
+  background-color: currentColor;
+  border-radius: 50%;
+  opacity: 0;
+  animation: spinner-grow .75s linear infinite; }
+
+.spinner-grow-sm {
+  width: 1rem;
+  height: 1rem; }
+
 .logo {
   background-image: url("../images/logotype-sm-dark.svg");
   width: 114px;
@@ -7538,10 +7583,20 @@ input {
         padding-right: 15px;
         padding-left: 15px; } }
 
+.loading {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: 30; }
+
+.hidden {
+  overflow-y: hidden; }
+
 .nav-item .custom, a.custom {
   border: 0; }
   .nav-item .custom:hover, a.custom:hover {
-    color: white !important; }
+    color: #fff !important; }
 
 .bg-position {
   position: absolute;
@@ -7558,7 +7613,7 @@ input {
   height: 259px;
   top: -89px;
   z-index: 20;
-  color: white;
+  color: #fff;
   transition: 0.7s;
   text-decoration: none !important;
   overflow: hidden; }
@@ -7589,6 +7644,8 @@ input {
   color: #3F5D45; }
   .l-active .bg-light-yellow, .l-active .bg-tea {
     background-color: #FFE180 !important; }
+  .l-active .l-font {
+    font-weight: 700; }
 
 .why-text {
   -webkit-writing-mode: horizontal-tb;
