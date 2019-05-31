@@ -1,0 +1,42 @@
+.order-bg{
+    background-color: theme-color("white");
+    color: $tea;
+    @include media-breakpoint-up(lg) {
+        background-color: theme-color("tea");
+        color: $white;
+    }
+}
+.order-title{
+    background-color: theme-color("light-tea");
+    @include media-breakpoint-up(lg) {
+    background-color: theme-color("tea");
+    } 
+}
+
+.cart-img{
+    width: 157px;
+    height: 106px;
+    @include media-breakpoint-up(lg) {
+        min-width: 110px;
+        height: 110px;
+    } 
+}
+
+.cart-input{
+    height: auto;
+    border: 1px solid #ced4da !important;
+    background-color: #fff !important;
+}
+
+.cart-full{
+    margin-left: -15px;
+    margin-right: -15px;
+    @include media-breakpoint-up(lg){
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
+.l-btn:hover{
+   border-color: rgba(0, 0, 0, 0.125) !important;
+}

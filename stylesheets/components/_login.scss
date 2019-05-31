@@ -1,0 +1,11 @@
+.form-position{
+    position: relative;
+    width: 100%;
+    height: 56px;
+    background-color: $light-tea;
+    .input-icon{
+        position: absolute;
+        left: 15px;
+        top: 15px;
+    }
+}

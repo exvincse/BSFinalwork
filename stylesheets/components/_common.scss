@@ -1,0 +1,50 @@
+.logo{
+        background-image: url("../images/logotype-sm-dark.svg");
+        width: 114px;
+        height: 17px;
+    @include media-breakpoint-up(lg) {
+        background-image: url("../images/logo-all-dark.svg");
+        width: 219px;
+        height: 40px;
+    }
+}
+
+.bg-cover{
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+input{
+    border: 0 !important;
+    outline: none !important;
+    background-color: $light-tea !important;
+}
+
+.no-container{
+    padding-right: 0px;
+    padding-left: 0px;
+    @include media-breakpoint-up(lg){
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
+.p-gutters{
+    margin-right: 0;
+    margin-left: 0;
+  > .col,
+  > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  @include media-breakpoint-up(lg) {
+    margin-right: -15px;
+    margin-left: -15px;
+    > .col,
+    > [class*="col-"] {
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+  }
+} 

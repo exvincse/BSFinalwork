@@ -1,0 +1,69 @@
+.l-progess{
+    position: relative;
+    &::after{
+        content: "";
+        width: 100%;
+        height: 1px;
+        background-color: $lime-green;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+.l-progess-item{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border: 1px solid $lime-green;
+    border-radius: 50%;
+    padding: 2px;
+    background-color: $tea;
+    z-index: 1;
+}
+.check-active::after{
+        content:"";
+        width: 11.5px;
+        height: 11.5px;
+        background-color: $white;
+        position: absolute;
+        top: 3px;
+        left: 3px;
+        border-radius: 50%
+}
+
+.l-complete{
+    background-color: $white;
+    color: $tea;
+    position: relative;
+    .l-progess-icon{
+        position: absolute;
+        top: 3px;
+        left: 3px;
+        font-size: 12px;
+    }
+}
+
+.check-img{
+    width: 120px;
+    height: 80px;
+}
+
+//-------------------------
+
+.card-position{
+    position: relative;
+    background-color: #EAF0ED;
+    .card-icon{
+        position: absolute;
+        line-height: 1rem;
+        top: 15px;
+        right: 22px;
+        bottom: 0;
+    }
+}
+.invoice:hover,.in-active{
+    color: $tea !important;
+}
