@@ -7585,13 +7585,15 @@ input {
 
 .loading {
   position: fixed;
-  width: 100%;
-  height: 100%;
   background-color: white;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   z-index: 30; }
 
 .hidden {
-  overflow-y: hidden; }
+  overflow: hidden; }
 
 .nav-item .custom, a.custom {
   border: 0; }
