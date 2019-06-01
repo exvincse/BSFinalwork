@@ -1,18 +1,19 @@
 .nav-item .custom,a.custom{
     border: 0;
     &:hover{
-        color: white !important;
+        color: $white !important;
     }
 }
 
 .bg-position{
     position: absolute;
-    height: 259px;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    filter: blur(4px);
+    background-position: center center;
+    background-size: cover;
+    top: -10px;
+    bottom: -10px;
+    left: -10px;
+    right: -10px;
+    filter: blur(5px);
     z-index: -20;
 }
 
@@ -23,7 +24,7 @@
     height: 259px;
     top: -89px;
     z-index: 20;
-    color: white;
+    color: $white;
     transition: 0.7s;
     text-decoration: none !important; 
     overflow: hidden;
@@ -60,11 +61,14 @@
     .bg-light-yellow,.bg-tea{
         background-color:theme-color("light-yellow") !important;
     }
+    .l-font{
+        font-weight: $font-weight-bold;
+    }
 }
 
 .why-text{
     writing-mode: horizontal-tb;
-    color: #8DA291;
+    color: theme-color("lime-green");
     line-height: 2.5rem;
     @include media-breakpoint-up(lg) {
     writing-mode: vertical-rl;
