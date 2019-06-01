@@ -52,7 +52,7 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #8DA291;
+  color: #212529;
   text-align: left;
   background-color: #fff; }
 
@@ -1248,7 +1248,7 @@ select.form-control:focus::-ms-value {
   padding-bottom: 0.375rem;
   margin-bottom: 0;
   line-height: 1.5;
-  color: #8DA291;
+  color: #212529;
   background-color: transparent;
   border: solid transparent;
   border-width: 1px 0; }
@@ -1577,7 +1577,7 @@ textarea.form-control {
 .btn {
   display: inline-block;
   font-weight: 400;
-  color: #8DA291;
+  color: #212529;
   text-align: center;
   vertical-align: middle;
   -webkit-user-select: none;
@@ -1595,7 +1595,7 @@ textarea.form-control {
     .btn {
       transition: none; } }
   .btn:hover {
-    color: #8DA291;
+    color: #212529;
     text-decoration: none; }
   .btn:focus, .btn.focus {
     outline: 0;
@@ -2223,7 +2223,7 @@ input[type="button"].btn-block {
   padding: 0.5rem 0;
   margin: 0.125rem 0 0;
   font-size: 1rem;
-  color: #8DA291;
+  color: #212529;
   text-align: left;
   list-style: none;
   background-color: #fff;
@@ -3479,7 +3479,7 @@ input[type="button"].btn-block {
     text-decoration: none;
     background-color: #EAF0ED; }
   .list-group-item-action:active {
-    color: #8DA291;
+    color: #212529;
     background-color: #e9ecef; }
 
 .list-group-item {
@@ -6979,7 +6979,7 @@ a.text-lime-green:hover, a.text-lime-green:focus {
   color: #667d6a !important; }
 
 .text-body {
-  color: #8DA291 !important; }
+  color: #212529 !important; }
 
 .text-muted {
   color: #6c757d !important; }
@@ -7016,7 +7016,7 @@ a.text-lime-green:hover, a.text-lime-green:focus {
 .table {
   width: 100%;
   margin-bottom: 1rem;
-  color: #8DA291; }
+  color: #212529; }
   .table th,
   .table td {
     padding: 0.75rem;
@@ -7051,7 +7051,7 @@ a.text-lime-green:hover, a.text-lime-green:focus {
   background-color: rgba(0, 0, 0, 0.05); }
 
 .table-hover tbody tr:hover {
-  color: #8DA291;
+  color: #212529;
   background-color: rgba(0, 0, 0, 0.075); }
 
 .table-primary,
